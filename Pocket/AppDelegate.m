@@ -13,6 +13,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // 將資料庫檔案複製到具有寫入權限的目錄
+    NSFileManager *fm = [[NSFileManager alloc] init];
+    NSString *src = [[NSBundle mainBundle] pathForResource:@"mydb" ofType:@"sqlite"];
+    NSString *dst = [NSString stringWithFormat:@"%@/Documents/mydb.sqlite", NSHomeDirectory()];
+    
+    // 檢查目的檔案是否存在，如果不存在則複製資料庫
+    if ( ! [fm fileExistsAtPath:dst]) {
+        [fm copyItemAtPath:src toPath:dst error:nil];
+    }
+    
+    // 與資料庫連線，並將連線結果存入db變數中
+    if (sqlite3_open([dst UTF8String], &db) != SQLITE_OK) {
+        db = nil;
+        NSLog(@"資料庫連線失敗");
+    }
     return YES;
 }
 							
@@ -41,6 +56,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // 關閉資料庫連線
+    sqlite3_close(db);
+
 }
 
+- (sqlite3 *)getDB
+{
+    return db;
+}
 @end

@@ -22,6 +22,9 @@
 		6AED9B7219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
 		6AED9B7A19A5E948009DB6F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B7819A5E948009DB6F2 /* InfoPlist.strings */; };
 		6AED9B7C19A5E948009DB6F2 /* PocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B7B19A5E948009DB6F2 /* PocketTests.m */; };
+		6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */; };
+		6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */; };
+		6AED9B9819A5FFC7009DB6F2 /* mydb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		6AED9B7719A5E948009DB6F2 /* PocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketTests-Info.plist"; sourceTree = "<group>"; };
 		6AED9B7919A5E948009DB6F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AED9B7B19A5E948009DB6F2 /* PocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketTests.m; sourceTree = "<group>"; };
+		6AED9B8519A5EBC0009DB6F2 /* NewJourneyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewJourneyController.h; sourceTree = "<group>"; };
+		6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewJourneyController.m; sourceTree = "<group>"; };
+		6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydb.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */,
 				6AED9B5019A5E948009DB6F2 /* CoreGraphics.framework in Frameworks */,
 				6AED9B5219A5E948009DB6F2 /* UIKit.framework in Frameworks */,
 				6AED9B4E19A5E948009DB6F2 /* Foundation.framework in Frameworks */,
@@ -103,6 +111,7 @@
 		6AED9B4C19A5E948009DB6F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */,
 				6AED9B4D19A5E948009DB6F2 /* Foundation.framework */,
 				6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */,
 				6AED9B5119A5E948009DB6F2 /* UIKit.framework */,
@@ -118,6 +127,8 @@
 				6AED9B5D19A5E948009DB6F2 /* AppDelegate.m */,
 				6AED9B5F19A5E948009DB6F2 /* Main_iPhone.storyboard */,
 				6AED9B6219A5E948009DB6F2 /* Main_iPad.storyboard */,
+				6AED9B8519A5EBC0009DB6F2 /* NewJourneyController.h */,
+				6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */,
 				6AED9B6519A5E948009DB6F2 /* ViewController.h */,
 				6AED9B6619A5E948009DB6F2 /* ViewController.m */,
 				6AED9B6819A5E948009DB6F2 /* Images.xcassets */,
@@ -129,6 +140,7 @@
 		6AED9B5419A5E948009DB6F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */,
 				6AED9B5519A5E948009DB6F2 /* Pocket-Info.plist */,
 				6AED9B5619A5E948009DB6F2 /* InfoPlist.strings */,
 				6AED9B5919A5E948009DB6F2 /* main.m */,
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AED9B9819A5FFC7009DB6F2 /* mydb.sqlite in Resources */,
 				6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */,
 				6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */,
 				6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */,
@@ -256,6 +269,7 @@
 				6AED9B6719A5E948009DB6F2 /* ViewController.m in Sources */,
 				6AED9B5E19A5E948009DB6F2 /* AppDelegate.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,
+				6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
