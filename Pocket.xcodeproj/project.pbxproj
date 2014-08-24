@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A12187D19A9B0AC0035BA81 /* pocket.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6A12187C19A9B0AC0035BA81 /* pocket.sqlite */; };
 		6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12187F19A9B7340035BA81 /* PocketTableViewController.m */; };
+		6A12188619AA097F0035BA81 /* pocket1.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6A12188519AA097F0035BA81 /* pocket1.sqlite */; };
 		6AED9B4E19A5E948009DB6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4D19A5E948009DB6F2 /* Foundation.framework */; };
 		6AED9B5019A5E948009DB6F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */; };
 		6AED9B5219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
@@ -39,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A12187C19A9B0AC0035BA81 /* pocket.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocket.sqlite; sourceTree = "<group>"; };
 		6A12187E19A9B7340035BA81 /* PocketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketTableViewController.h; sourceTree = "<group>"; };
 		6A12187F19A9B7340035BA81 /* PocketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketTableViewController.m; sourceTree = "<group>"; };
+		6A12188519AA097F0035BA81 /* pocket1.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocket1.sqlite; sourceTree = "<group>"; };
 		6AED9B4A19A5E948009DB6F2 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED9B4D19A5E948009DB6F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,7 +145,7 @@
 		6AED9B5419A5E948009DB6F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A12187C19A9B0AC0035BA81 /* pocket.sqlite */,
+				6A12188519AA097F0035BA81 /* pocket1.sqlite */,
 				6AED9B5519A5E948009DB6F2 /* Pocket-Info.plist */,
 				6AED9B5619A5E948009DB6F2 /* InfoPlist.strings */,
 				6AED9B5919A5E948009DB6F2 /* main.m */,
@@ -249,8 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */,
-				6A12187D19A9B0AC0035BA81 /* pocket.sqlite in Resources */,
 				6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */,
+				6A12188619AA097F0035BA81 /* pocket1.sqlite in Resources */,
 				6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */,
 				6AED9B5819A5E948009DB6F2 /* InfoPlist.strings in Resources */,
 			);
