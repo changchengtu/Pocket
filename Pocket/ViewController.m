@@ -15,6 +15,26 @@
 
 @implementation ViewController
 
+// below two functions are necessary for table cell present
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [journeyList count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *indicator = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indicator];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indicator];
+    }
+    
+    cell.textLabel.text = [journeyList objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,12 +58,11 @@
         while (sqlite3_step(statement) == SQLITE_ROW) {
             char *id = (char *)sqlite3_column_text(statement, 0);
             char *name = (char *)sqlite3_column_text(statement, 1);
-            
+            [journeyList addObject:[NSString stringWithFormat:@"%s", name, nil]];
             NSLog(@"id: %@", [NSString stringWithCString:id encoding:NSUTF8StringEncoding]);
             NSLog(@"name: %@", [NSString stringWithCString:name encoding:NSUTF8StringEncoding]);
         }
         
-        // 使用完畢，釋放statement
         sqlite3_finalize(statement);
     }
 

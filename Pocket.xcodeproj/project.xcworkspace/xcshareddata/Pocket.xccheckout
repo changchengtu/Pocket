@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6525FCB-235B-4668-8B50-70B925645D90</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pocket</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2D211AF-3498-4966-A2FA-FB744B118D05</key>
+		<string>https://github.com/changchengtu/Pocket.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pocket.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2D211AF-3498-4966-A2FA-FB744B118D05</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/changchengtu/Pocket.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2D211AF-3498-4966-A2FA-FB744B118D05</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2D211AF-3498-4966-A2FA-FB744B118D05</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pocket</string>
+		</dict>
+	</array>
+</dict>
+</plist>
