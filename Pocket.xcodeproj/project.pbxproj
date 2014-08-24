@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A12187D19A9B0AC0035BA81 /* pocket.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6A12187C19A9B0AC0035BA81 /* pocket.sqlite */; };
+		6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12187F19A9B7340035BA81 /* PocketTableViewController.m */; };
 		6AED9B4E19A5E948009DB6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4D19A5E948009DB6F2 /* Foundation.framework */; };
 		6AED9B5019A5E948009DB6F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */; };
 		6AED9B5219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
@@ -24,7 +26,6 @@
 		6AED9B7C19A5E948009DB6F2 /* PocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B7B19A5E948009DB6F2 /* PocketTests.m */; };
 		6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */; };
 		6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */; };
-		6AED9B9819A5FFC7009DB6F2 /* mydb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A12187C19A9B0AC0035BA81 /* pocket.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocket.sqlite; sourceTree = "<group>"; };
+		6A12187E19A9B7340035BA81 /* PocketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketTableViewController.h; sourceTree = "<group>"; };
+		6A12187F19A9B7340035BA81 /* PocketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketTableViewController.m; sourceTree = "<group>"; };
 		6AED9B4A19A5E948009DB6F2 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED9B4D19A5E948009DB6F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +65,6 @@
 		6AED9B8519A5EBC0009DB6F2 /* NewJourneyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewJourneyController.h; sourceTree = "<group>"; };
 		6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewJourneyController.m; sourceTree = "<group>"; };
 		6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydb.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */,
 				6AED9B6519A5E948009DB6F2 /* ViewController.h */,
 				6AED9B6619A5E948009DB6F2 /* ViewController.m */,
+				6A12187E19A9B7340035BA81 /* PocketTableViewController.h */,
+				6A12187F19A9B7340035BA81 /* PocketTableViewController.m */,
 				6AED9B6819A5E948009DB6F2 /* Images.xcassets */,
 				6AED9B5419A5E948009DB6F2 /* Supporting Files */,
 			);
@@ -140,7 +145,7 @@
 		6AED9B5419A5E948009DB6F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AED9B9719A5FFC7009DB6F2 /* mydb.sqlite */,
+				6A12187C19A9B0AC0035BA81 /* pocket.sqlite */,
 				6AED9B5519A5E948009DB6F2 /* Pocket-Info.plist */,
 				6AED9B5619A5E948009DB6F2 /* InfoPlist.strings */,
 				6AED9B5919A5E948009DB6F2 /* main.m */,
@@ -243,8 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AED9B9819A5FFC7009DB6F2 /* mydb.sqlite in Resources */,
 				6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */,
+				6A12187D19A9B0AC0035BA81 /* pocket.sqlite in Resources */,
 				6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */,
 				6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */,
 				6AED9B5819A5E948009DB6F2 /* InfoPlist.strings in Resources */,
@@ -268,6 +273,7 @@
 			files = (
 				6AED9B6719A5E948009DB6F2 /* ViewController.m in Sources */,
 				6AED9B5E19A5E948009DB6F2 /* AppDelegate.m in Sources */,
+				6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,
 				6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */,
 			);
@@ -484,6 +490,7 @@
 				6AED9B8119A5E948009DB6F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AED9B8219A5E948009DB6F2 /* Build configuration list for PBXNativeTarget "PocketTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				6AED9B8419A5E948009DB6F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
