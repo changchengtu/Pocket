@@ -83,6 +83,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9we-3B-4c6" id="nKV-Je-pLO"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqc-ZO-NqM">
                                 <rect key="frame" x="20" y="144" width="61" height="21"/>
@@ -121,6 +124,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="location" destination="hrK-an-fAM" id="PFy-qM-Ows"/>
+                        <outlet property="tripLocation" destination="hrK-an-fAM" id="cZM-aC-HSd"/>
+                        <outlet property="tripName" destination="hrK-an-fAM" id="4iu-M8-Z66"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YO1-Du-k08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

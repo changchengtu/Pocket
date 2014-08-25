@@ -25,7 +25,6 @@
 		6AED9B7219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
 		6AED9B7A19A5E948009DB6F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B7819A5E948009DB6F2 /* InfoPlist.strings */; };
 		6AED9B7C19A5E948009DB6F2 /* PocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B7B19A5E948009DB6F2 /* PocketTests.m */; };
-		6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */; };
 		6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +64,6 @@
 		6AED9B7719A5E948009DB6F2 /* PocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketTests-Info.plist"; sourceTree = "<group>"; };
 		6AED9B7919A5E948009DB6F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AED9B7B19A5E948009DB6F2 /* PocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketTests.m; sourceTree = "<group>"; };
-		6AED9B8519A5EBC0009DB6F2 /* NewJourneyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewJourneyController.h; sourceTree = "<group>"; };
-		6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewJourneyController.m; sourceTree = "<group>"; };
 		6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -135,8 +132,6 @@
 				6A12188719AA36300035BA81 /* NewJourneyViewController.h */,
 				6A12188819AA36300035BA81 /* NewJourneyViewController.m */,
 				6AED9B6219A5E948009DB6F2 /* Main_iPad.storyboard */,
-				6AED9B8519A5EBC0009DB6F2 /* NewJourneyController.h */,
-				6AED9B8619A5EBC0009DB6F2 /* NewJourneyController.m */,
 				6AED9B6519A5E948009DB6F2 /* ViewController.h */,
 				6AED9B6619A5E948009DB6F2 /* ViewController.m */,
 				6A12187E19A9B7340035BA81 /* PocketTableViewController.h */,
@@ -281,7 +276,6 @@
 				6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,
 				6A12188919AA36300035BA81 /* NewJourneyViewController.m in Sources */,
-				6AED9B8719A5EBC0009DB6F2 /* NewJourneyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
