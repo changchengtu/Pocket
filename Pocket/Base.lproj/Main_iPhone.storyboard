@@ -99,12 +99,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameDoneEditing:" destination="MoD-CK-Xl3" eventType="editingChanged" id="gxG-At-orK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zPc-Mv-Ggc">
                                 <rect key="frame" x="20" y="173" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="locationDoneEditing:" destination="MoD-CK-Xl3" eventType="editingChanged" id="xMr-6Y-WHa"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -121,6 +127,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="journeyLocation" destination="zPc-Mv-Ggc" id="5OV-8m-zxb"/>
+                        <outlet property="journeyName" destination="aSc-GW-KgR" id="5MM-Ta-px9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YO1-Du-k08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

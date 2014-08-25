@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface NewJourneyViewController : ViewController
-
-
+{
+    NSMutableDictionary *journeyDetail;// for saving data from user entered about journey
+}
+@property (strong, nonatomic) IBOutlet UITextField *journeyName;
+@property (strong, nonatomic) IBOutlet UITextField *journeyLocation;
 @end
