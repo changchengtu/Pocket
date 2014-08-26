@@ -12,6 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIStoryboard *storyboard = [self grabStoryboard];
     // Override point for customization after application launch.
     // 將資料庫檔案複製到具有寫入權限的目錄
     NSFileManager *fm = [[NSFileManager alloc] init];
@@ -30,6 +31,30 @@
     }
     return YES;
 }
+
+
+//This method returns the following UIStoryboard file:
+//Main.storyboard on 3.5inch devices
+//Main-4in.storyboard on 4inch devices
+
+- (UIStoryboard *)grabStoryboard {
+    
+    UIStoryboard *storyboard;
+    
+    // detect the height of our screen
+    int height = [UIScreen mainScreen].bounds.size.height;
+    
+    if (height == 480) {
+        storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+        // NSLog(@"Device has a 3.5inch Display.");
+    } else {
+        storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone-4inch" bundle:nil];
+        // NSLog(@"Device has a 4inch Display.");
+    }
+    
+    return storyboard;
+}
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

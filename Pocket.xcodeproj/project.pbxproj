@@ -26,6 +26,9 @@
 		6AED9B7A19A5E948009DB6F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B7819A5E948009DB6F2 /* InfoPlist.strings */; };
 		6AED9B7C19A5E948009DB6F2 /* PocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B7B19A5E948009DB6F2 /* PocketTests.m */; };
 		6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */; };
+		DFA5F22819AC7821009AF9B4 /* RecordFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5F22519AC7821009AF9B4 /* RecordFunctionViewController.m */; };
+		DFA5F22919AC7821009AF9B4 /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5F22719AC7821009AF9B4 /* VoiceViewController.m */; };
+		DFA5F22B19AC87DE009AF9B4 /* Main_iPhone-4inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA5F22A19AC87DE009AF9B4 /* Main_iPhone-4inch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,11 @@
 		6AED9B7919A5E948009DB6F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AED9B7B19A5E948009DB6F2 /* PocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketTests.m; sourceTree = "<group>"; };
 		6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DFA5F22419AC7821009AF9B4 /* RecordFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordFunctionViewController.h; path = "../../Pocket-master/Pocket/RecordFunctionViewController.h"; sourceTree = "<group>"; };
+		DFA5F22519AC7821009AF9B4 /* RecordFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordFunctionViewController.m; path = "../../Pocket-master/Pocket/RecordFunctionViewController.m"; sourceTree = "<group>"; };
+		DFA5F22619AC7821009AF9B4 /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceViewController.h; path = "../../../ios_learning/Pocket-master/Pocket/VoiceViewController.h"; sourceTree = "<group>"; };
+		DFA5F22719AC7821009AF9B4 /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VoiceViewController.m; path = "../../../ios_learning/Pocket-master/Pocket/VoiceViewController.m"; sourceTree = "<group>"; };
+		DFA5F22A19AC87DE009AF9B4 /* Main_iPhone-4inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main_iPhone-4inch.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,11 @@
 				6AED9B5C19A5E948009DB6F2 /* AppDelegate.h */,
 				6AED9B5D19A5E948009DB6F2 /* AppDelegate.m */,
 				6AED9B5F19A5E948009DB6F2 /* Main_iPhone.storyboard */,
+				DFA5F22A19AC87DE009AF9B4 /* Main_iPhone-4inch.storyboard */,
+				DFA5F22419AC7821009AF9B4 /* RecordFunctionViewController.h */,
+				DFA5F22519AC7821009AF9B4 /* RecordFunctionViewController.m */,
+				DFA5F22619AC7821009AF9B4 /* VoiceViewController.h */,
+				DFA5F22719AC7821009AF9B4 /* VoiceViewController.m */,
 				6A12188719AA36300035BA81 /* NewJourneyViewController.h */,
 				6A12188819AA36300035BA81 /* NewJourneyViewController.m */,
 				6AED9B6219A5E948009DB6F2 /* Main_iPad.storyboard */,
@@ -251,6 +264,7 @@
 				6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */,
 				6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */,
 				6A12188619AA097F0035BA81 /* pocket1.sqlite in Resources */,
+				DFA5F22B19AC87DE009AF9B4 /* Main_iPhone-4inch.storyboard in Resources */,
 				6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */,
 				6AED9B5819A5E948009DB6F2 /* InfoPlist.strings in Resources */,
 			);
@@ -272,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AED9B6719A5E948009DB6F2 /* ViewController.m in Sources */,
+				DFA5F22819AC7821009AF9B4 /* RecordFunctionViewController.m in Sources */,
+				DFA5F22919AC7821009AF9B4 /* VoiceViewController.m in Sources */,
 				6AED9B5E19A5E948009DB6F2 /* AppDelegate.m in Sources */,
 				6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,
