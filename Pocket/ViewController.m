@@ -37,6 +37,11 @@
 
 - (void)viewDidLoad
 {
+    //initial a notification for reload tableview function
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(ReloadDataFunction:)
+                                                 name:@"refresh"
+                                               object:nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -67,6 +72,48 @@
     }
 
 }
+
+// implement a reload tableview function
+-(void)ReloadDataFunction:(NSNotification *)notification {
+    
+    // 取得已開啓的資料庫連線變數
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    sqlite3 *db = [delegate getDB];
+    
+    if (db != nil) {
+        // 準備好查詢的SQL command
+        const char *sql = "SELECT * FROM journey";
+        // statement用來儲存執行結果
+        sqlite3_stmt *statement;
+        sqlite3_prepare(db, sql, -1, &statement, NULL);
+        
+        // 利用迴圈取出查詢結果
+        while (sqlite3_step(statement) == SQLITE_ROW) {
+            char *id = (char *)sqlite3_column_text(statement, 0);
+            char *name = (char *)sqlite3_column_text(statement, 1);
+            [journeyList addObject:[NSString stringWithFormat:@"%s", name, nil]];
+            NSLog(@"id: %@", [NSString stringWithCString:id encoding:NSUTF8StringEncoding]);
+            NSLog(@"name: %@", [NSString stringWithCString:name encoding:NSUTF8StringEncoding]);
+        }
+        
+        sqlite3_finalize(statement);
+    }
+    
+    NSLog(@"reload");
+    // 用迴圈取得位於ViewController上的每一個UIView類別
+    for (UIView *view in self.view.subviews) {
+        // 判斷取得的view是否屬於UITableView類別
+        if ([view isKindOfClass:[UITableView class]]) {
+            // 如果是就強制轉型為UITableView
+            UITableView *tableView = (UITableView *)view;
+            // 要求重新載入資料
+            [tableView reloadData];
+            break;
+        }
+    }
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

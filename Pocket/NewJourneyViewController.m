@@ -87,6 +87,9 @@
         // 使用完畢，釋放statement
         sqlite3_finalize(statement);
     }
+    
+    // reload tableview in ViewController
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refresh" object:nil];
     [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
