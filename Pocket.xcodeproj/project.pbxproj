@@ -19,13 +19,13 @@
 		6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B5F19A5E948009DB6F2 /* Main_iPhone.storyboard */; };
 		6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B6219A5E948009DB6F2 /* Main_iPad.storyboard */; };
 		6AED9B6719A5E948009DB6F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B6619A5E948009DB6F2 /* ViewController.m */; };
-		6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B6819A5E948009DB6F2 /* Images.xcassets */; };
 		6AED9B7019A5E948009DB6F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B6F19A5E948009DB6F2 /* XCTest.framework */; };
 		6AED9B7119A5E948009DB6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4D19A5E948009DB6F2 /* Foundation.framework */; };
 		6AED9B7219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
 		6AED9B7A19A5E948009DB6F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AED9B7819A5E948009DB6F2 /* InfoPlist.strings */; };
 		6AED9B7C19A5E948009DB6F2 /* PocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AED9B7B19A5E948009DB6F2 /* PocketTests.m */; };
 		6AED9B8919A5F058009DB6F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */; };
+		DF43BF0519ADFD1E00BED9BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF43BF0419ADFD1E00BED9BC /* Images.xcassets */; };
 		DF5DFD3619ADEBC000FA5E76 /* Main_iPhone-4in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5DFD3419ADEBC000FA5E76 /* Main_iPhone-4in.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -59,13 +59,13 @@
 		6AED9B6319A5E948009DB6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		6AED9B6519A5E948009DB6F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6AED9B6619A5E948009DB6F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6AED9B6819A5E948009DB6F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6AED9B6E19A5E948009DB6F2 /* PocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED9B6F19A5E948009DB6F2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6AED9B7719A5E948009DB6F2 /* PocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketTests-Info.plist"; sourceTree = "<group>"; };
 		6AED9B7919A5E948009DB6F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AED9B7B19A5E948009DB6F2 /* PocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketTests.m; sourceTree = "<group>"; };
 		6AED9B8819A5F058009DB6F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DF43BF0419ADFD1E00BED9BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF5DFD3519ADEBC000FA5E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main_iPhone-4in.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 				6AED9B6619A5E948009DB6F2 /* ViewController.m */,
 				6A12187E19A9B7340035BA81 /* PocketTableViewController.h */,
 				6A12187F19A9B7340035BA81 /* PocketTableViewController.m */,
-				6AED9B6819A5E948009DB6F2 /* Images.xcassets */,
+				DF43BF0419ADFD1E00BED9BC /* Images.xcassets */,
 				6AED9B5419A5E948009DB6F2 /* Supporting Files */,
 			);
 			path = Pocket;
@@ -252,9 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AED9B6419A5E948009DB6F2 /* Main_iPad.storyboard in Resources */,
-				6AED9B6919A5E948009DB6F2 /* Images.xcassets in Resources */,
 				6A12188619AA097F0035BA81 /* pocket1.sqlite in Resources */,
 				DF5DFD3619ADEBC000FA5E76 /* Main_iPhone-4in.storyboard in Resources */,
+				DF43BF0519ADFD1E00BED9BC /* Images.xcassets in Resources */,
 				6AED9B6119A5E948009DB6F2 /* Main_iPhone.storyboard in Resources */,
 				6AED9B5819A5E948009DB6F2 /* InfoPlist.strings in Resources */,
 			);

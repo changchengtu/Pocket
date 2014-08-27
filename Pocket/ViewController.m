@@ -41,19 +41,19 @@
     if (indexPath.row > -1)
 	{
 		//do actions
-		UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+		UIImagePickerController *imgpicker = [[UIImagePickerController alloc] init];
 		
 		// Set the image picker source to the camera:
-		picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-		picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+		imgpicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+		imgpicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
 		// Hide the camera controls:
-		picker.showsCameraControls = YES;
-		picker.navigationBarHidden = NO;
+		//imgpicker.showsCameraControls = YES;
+		//imgpicker.navigationBarHidden = NO;
 		// Allow editing of image ?
-        picker.allowsEditing = NO;
+        imgpicker.allowsEditing = NO;
         
         // Show image picker
-        [self presentViewController:picker animated:YES completion:NULL];
+        [self presentViewController:imgpicker animated:YES completion:NULL];
 		// Make the view full screen:
     }
 }
