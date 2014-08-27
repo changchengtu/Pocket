@@ -37,6 +37,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     //do camera action from the first row to the last row in the tableview
     if (indexPath.row > -1)
 	{
@@ -46,6 +47,9 @@
 		// Set the image picker source to the camera:
 		imgpicker.sourceType = UIImagePickerControllerSourceTypeCamera;
 		imgpicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+        
+        //杜長城（書本新增），為了啟動下面imagePickerController
+        imgpicker.delegate = self;
 		// Hide the camera controls:
 		//imgpicker.showsCameraControls = YES;
 		//imgpicker.navigationBarHidden = NO;
@@ -56,6 +60,16 @@
         [self presentViewController:imgpicker animated:YES completion:NULL];
 		// Make the view full screen:
     }
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // 取得使用者拍攝的照片
+    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    // 存檔
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    // 關閉拍照程式
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
