@@ -37,6 +37,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //do camera action from the first row to the last row in the tableview
     if (indexPath.row > -1)
 	{
 		//do actions

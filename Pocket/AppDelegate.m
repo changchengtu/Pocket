@@ -12,7 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //UIStoryboard *storyboard = [self grabStoryboard];
+    //detect if it's the 3.5 inch screen or the 4 inch screen
+    UIStoryboard *storyboard = [self grabStoryboard];
+    // show the storyboard
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     // 將資料庫檔案複製到具有寫入權限的目錄
     NSFileManager *fm = [[NSFileManager alloc] init];
@@ -48,7 +53,7 @@
         storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
         // NSLog(@"Device has a 3.5inch Display.");
     } else {
-        storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone-4inch" bundle:nil];
+        storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone-4in" bundle:nil];
         // NSLog(@"Device has a 4inch Display.");
     }
     
