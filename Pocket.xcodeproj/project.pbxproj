@@ -10,8 +10,6 @@
 		6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12187F19A9B7340035BA81 /* PocketTableViewController.m */; };
 		6A12188619AA097F0035BA81 /* pocket1.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6A12188519AA097F0035BA81 /* pocket1.sqlite */; };
 		6A12188919AA36300035BA81 /* NewJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12188819AA36300035BA81 /* NewJourneyViewController.m */; };
-		6AC255B019AC8E72000CCE1F /* RecordFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC255AF19AC8E72000CCE1F /* RecordFunctionViewController.m */; };
-		6AC255B319AC8E85000CCE1F /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC255B219AC8E85000CCE1F /* VoiceViewController.m */; };
 		6AED9B4E19A5E948009DB6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4D19A5E948009DB6F2 /* Foundation.framework */; };
 		6AED9B5019A5E948009DB6F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */; };
 		6AED9B5219A5E948009DB6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B5119A5E948009DB6F2 /* UIKit.framework */; };
@@ -47,10 +45,6 @@
 		6A12188519AA097F0035BA81 /* pocket1.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocket1.sqlite; sourceTree = "<group>"; };
 		6A12188719AA36300035BA81 /* NewJourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewJourneyViewController.h; sourceTree = "<group>"; };
 		6A12188819AA36300035BA81 /* NewJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewJourneyViewController.m; sourceTree = "<group>"; };
-		6AC255AE19AC8E5D000CCE1F /* RecordFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordFunctionViewController.h; sourceTree = "<group>"; };
-		6AC255AF19AC8E72000CCE1F /* RecordFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordFunctionViewController.m; sourceTree = "<group>"; };
-		6AC255B119AC8E7D000CCE1F /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceViewController.h; sourceTree = "<group>"; };
-		6AC255B219AC8E85000CCE1F /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceViewController.m; sourceTree = "<group>"; };
 		6AED9B4A19A5E948009DB6F2 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED9B4D19A5E948009DB6F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,10 +132,6 @@
 				6AED9B5D19A5E948009DB6F2 /* AppDelegate.m */,
 				6AED9B5F19A5E948009DB6F2 /* Main_iPhone.storyboard */,
 				DF5DFD3419ADEBC000FA5E76 /* Main_iPhone-4in.storyboard */,
-				6AC255B219AC8E85000CCE1F /* VoiceViewController.m */,
-				6AC255B119AC8E7D000CCE1F /* VoiceViewController.h */,
-				6AC255AF19AC8E72000CCE1F /* RecordFunctionViewController.m */,
-				6AC255AE19AC8E5D000CCE1F /* RecordFunctionViewController.h */,
 				6A12188719AA36300035BA81 /* NewJourneyViewController.h */,
 				6A12188819AA36300035BA81 /* NewJourneyViewController.m */,
 				6AED9B6219A5E948009DB6F2 /* Main_iPad.storyboard */,
@@ -286,8 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AED9B6719A5E948009DB6F2 /* ViewController.m in Sources */,
-				6AC255B019AC8E72000CCE1F /* RecordFunctionViewController.m in Sources */,
-				6AC255B319AC8E85000CCE1F /* VoiceViewController.m in Sources */,
 				6AED9B5E19A5E948009DB6F2 /* AppDelegate.m in Sources */,
 				6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,

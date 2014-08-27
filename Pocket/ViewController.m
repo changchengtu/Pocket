@@ -58,6 +58,12 @@
     }
 }
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
 - (void)viewDidLoad
 {
     //initial a notification for reload tableview function

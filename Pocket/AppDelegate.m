@@ -16,7 +16,7 @@
     UIStoryboard *storyboard = [self grabStoryboard];
     // show the storyboard
     self.window.rootViewController = [storyboard instantiateInitialViewController];
-    [self.window makeKeyAndVisible];
+    //[self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.
     // 將資料庫檔案複製到具有寫入權限的目錄
