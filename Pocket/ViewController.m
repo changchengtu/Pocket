@@ -35,6 +35,28 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row > -1)
+	{
+		//do actions
+		UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+		
+		// Set the image picker source to the camera:
+		picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+		picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+		// Hide the camera controls:
+		picker.showsCameraControls = YES;
+		picker.navigationBarHidden = NO;
+		// Allow editing of image ?
+        picker.allowsEditing = NO;
+        
+        // Show image picker
+        [self presentViewController:picker animated:YES completion:NULL];
+		// Make the view full screen:
+    }
+}
+
 - (void)viewDidLoad
 {
     //initial a notification for reload tableview function

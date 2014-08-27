@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIStoryboard *storyboard = [self grabStoryboard];
+    //UIStoryboard *storyboard = [self grabStoryboard];
     // Override point for customization after application launch.
     // 將資料庫檔案複製到具有寫入權限的目錄
     NSFileManager *fm = [[NSFileManager alloc] init];
