@@ -70,7 +70,7 @@
     sqlite3 *db = [delegate getDB];
     if (db != nil) {
         // 準備好插入資料的SQL command
-        NSString *queryString = [NSString stringWithFormat:@"INSERT INTO journey VALUES ( NULL, '%@','%@',NULL, NULL)", journeyDetail[@"name"], journeyDetail[@"location"]];
+        NSString *queryString = [NSString stringWithFormat:@"INSERT INTO journey VALUES ( NULL, '%@','%@',NULL, NULL,NULL, NULL,NULL,0)", journeyDetail[@"name"], journeyDetail[@"location"]];
         const char *sql = [queryString UTF8String];
 
         sqlite3_stmt *statement;
