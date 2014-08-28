@@ -28,26 +28,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    
-    //do actions
-    UIImagePickerController *imgpicker = [[UIImagePickerController alloc] init];
-    
-    // Set the image picker source to the camera:
-    imgpicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    imgpicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
-    
-    //杜長城（書本新增），為了啟動下面imagePickerController
-    imgpicker.delegate = self;
-    // Hide the camera controls:
-    //imgpicker.showsCameraControls = YES;
-    //imgpicker.navigationBarHidden = NO;
-    // Allow editing of image ?
-    imgpicker.allowsEditing = NO;
-    
-    // Show image picker
-    [self presentViewController:imgpicker animated:YES completion:NULL];
-    // Make the view full screen:
     
 }
 
@@ -80,6 +60,16 @@
     NSLog(@"RETURN");
 }
 
+- (void) setCamera:(BOOL *)open {
+    
+    if (open) {
+        NSLog(@"on the journey");
+    } else{
+        NSLog(@"not on the journey");
+    }
+    
+}
+
 /*
 #pragma mark - Navigation
 
@@ -90,5 +80,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

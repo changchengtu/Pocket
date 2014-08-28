@@ -39,7 +39,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // which row user clicked
+    // if user is on this journey: 1==yes  0==not
     NSLog([[journeyList objectAtIndex:indexPath.row] objectAtIndex:8]);
     
     // variables for checking journey state
@@ -48,20 +48,23 @@
     NSInteger travelingCheck = [traveling integerValue];
     NSInteger yesCheck = [yes integerValue];
     
+    TimelineViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"TimelineViewController"];
+    BOOL *open;
+    
     //do camera action from the first row to the last row in the tableview
     if (indexPath.row > -1)
 	{
         // check if user is on journey
         if (travelingCheck==yesCheck) {
-            journeyState = @"yes";
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"openCamera" object:nil];
-            NSLog(@"openCamera");
+            open = YES;
         } else{
-            journeyState = @"no";
-            NSLog(@"donotCamera");
+            open = NO;
         }
 
     }
+    [detailView setCamera:open];
+    
+
 }
 
 

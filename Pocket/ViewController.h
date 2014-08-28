@@ -13,7 +13,7 @@
 {
     NSMutableArray *journeyList;
     NSMutableArray *journeyInfo;
-    NSString *journeyState;
 }
+
 
 @end

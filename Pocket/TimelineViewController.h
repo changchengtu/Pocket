@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimelineViewController : UIViewController
+@interface TimelineViewController : UIViewController<UINavigationBarDelegate, UIImagePickerControllerDelegate>
+{
+    bool *openCamera;
+}
+- (void) setCamera:(BOOL *)open;
 
 @end
