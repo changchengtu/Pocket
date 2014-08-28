@@ -89,7 +89,7 @@
     }
     
     // reload tableview in ViewController
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"refresh" object:nil];
+    
     [self dismissViewControllerAnimated:YES completion:^{}];
 }
 

@@ -28,6 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nVC-5N-8Cg" kind="push" identifier="showJourney" id="9eU-E9-V3k"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -195,6 +198,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bNi-xL-qhn">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abT-Yk-snm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="bNh-xa-Ebx" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Ds9-Aa-gsg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NFR-qF-mPE">
@@ -204,9 +208,36 @@
                         <segue destination="MoD-CK-Xl3" kind="relationship" relationship="rootViewController" id="6G1-xc-Q3k"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="abT-Yk-snm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="595" y="-192"/>
+        </scene>
+        <!--Timeline View Controller - journey-->
+        <scene sceneID="QdE-53-qg9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cw3-Z7-rHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="nVC-5N-8Cg" customClass="TimelineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A9x-2E-ViO"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Lg-cO-TPE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nQc-OJ-vzf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCt-hV-TLI">
+                                <rect key="frame" x="30" y="120" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="journey" id="mAf-jh-KXv"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="963" y="434"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

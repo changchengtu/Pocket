@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TimelineViewController.h"
 
 
 @interface ViewController ()
@@ -35,6 +36,7 @@
     return cell;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // which row user clicked
@@ -51,45 +53,17 @@
 	{
         // check if user is on journey
         if (travelingCheck==yesCheck) {
-            NSLog(@"ready to open Camera");
-            //do actions
-            UIImagePickerController *imgpicker = [[UIImagePickerController alloc] init];
-            
-            // Set the image picker source to the camera:
-            imgpicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-            imgpicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
-            
-            //杜長城（書本新增），為了啟動下面imagePickerController
-            imgpicker.delegate = self;
-            // Hide the camera controls:
-            //imgpicker.showsCameraControls = YES;
-            //imgpicker.navigationBarHidden = NO;
-            // Allow editing of image ?
-            imgpicker.allowsEditing = NO;
-            
-            // Show image picker
-            [self presentViewController:imgpicker animated:YES completion:NULL];
-            // Make the view full screen:
+            journeyState = @"yes";
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"openCamera" object:nil];
+            NSLog(@"openCamera");
+        } else{
+            journeyState = @"no";
+            NSLog(@"donotCamera");
         }
 
     }
 }
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    // 取得使用者拍攝的照片
-    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    // 存檔
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    // 關閉拍照程式
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
-}
 
 - (void)viewDidLoad
 {
