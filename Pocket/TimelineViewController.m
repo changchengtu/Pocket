@@ -31,21 +31,6 @@
     
 }
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    // 取得使用者拍攝的照片
-    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    // 存檔
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    // 關閉拍照程式
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -60,9 +45,9 @@
     NSLog(@"RETURN");
 }
 
-- (void) setCamera:(BOOL *)open {
+- (void) setJourneyState:(BOOL *)state {
     
-    if (open) {
+    if (state) {
         NSLog(@"on the journey");
     } else{
         NSLog(@"not on the journey");

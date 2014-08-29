@@ -28,9 +28,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="nVC-5N-8Cg" kind="push" identifier="showJourney" id="9eU-E9-V3k"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -57,6 +54,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pocket" id="Rvu-QF-9Ph"/>
+                    <connections>
+                        <segue destination="2I7-tR-aUd" kind="push" identifier="showRecord" id="Mos-wl-z63"/>
+                        <segue destination="nVC-5N-8Cg" kind="push" identifier="showJourney" id="xPg-xw-kDS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,6 +184,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WeU-eb-YXx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AT-q2-bc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="SOe-Im-U5U" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="u1N-iR-dye">
                         <autoresizingMask key="autoresizingMask"/>
@@ -191,7 +193,6 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="BGU-XE-9Qe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1AT-q2-bc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154" y="-192"/>
         </scene>
@@ -210,6 +211,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abT-Yk-snm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="595" y="-192"/>
+        </scene>
+        <!--Record View Controller - Record-->
+        <scene sceneID="mLf-av-2Zh">
+            <objects>
+                <viewController id="2I7-tR-aUd" customClass="RecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Irq-yk-4cW"/>
+                        <viewControllerLayoutGuide type="bottom" id="5IC-Sk-o8t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mdC-zE-fQs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Record" id="TRZ-gU-CqD"/>
+                    <connections>
+                        <segue destination="nVC-5N-8Cg" kind="push" identifier="showJourney" id="dbQ-Do-u2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDE-H4-Q1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="429"/>
         </scene>
         <!--Timeline View Controller - journey-->
         <scene sceneID="QdE-53-qg9">
@@ -236,4 +259,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="xPg-xw-kDS"/>
+    </inferredMetricsTieBreakers>
 </document>

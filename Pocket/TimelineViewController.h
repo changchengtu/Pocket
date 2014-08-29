@@ -10,8 +10,8 @@
 
 @interface TimelineViewController : UIViewController<UINavigationBarDelegate, UIImagePickerControllerDelegate>
 {
-    bool *openCamera;
+    bool *onJourney;
 }
-- (void) setCamera:(BOOL *)open;
+- (void) setJourneyState:(BOOL *)state;
 
 @end

@@ -48,21 +48,23 @@
     NSInteger travelingCheck = [traveling integerValue];
     NSInteger yesCheck = [yes integerValue];
     
-    TimelineViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"TimelineViewController"];
-    BOOL *open;
+    TimelineViewController *timelineViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TimelineViewController"];
+    BOOL *journeyOnGoing;
     
     //do camera action from the first row to the last row in the tableview
     if (indexPath.row > -1)
 	{
         // check if user is on journey
         if (travelingCheck==yesCheck) {
-            open = YES;
+            journeyOnGoing = YES;
+            [self performSegueWithIdentifier:@"showRecord" sender:self];
         } else{
-            open = NO;
+            journeyOnGoing = NO;
+            [self performSegueWithIdentifier:@"showJourney" sender:self];
         }
 
     }
-    [detailView setCamera:open];
+    [timelineViewController setJourneyState:journeyOnGoing];
     
 
 }

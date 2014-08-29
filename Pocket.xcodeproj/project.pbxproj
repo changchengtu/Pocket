@@ -10,6 +10,7 @@
 		6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12187F19A9B7340035BA81 /* PocketTableViewController.m */; };
 		6A12188919AA36300035BA81 /* NewJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12188819AA36300035BA81 /* NewJourneyViewController.m */; };
 		6A1CCBD319AED8F7008E0635 /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CCBD219AED8F7008E0635 /* TimelineViewController.m */; };
+		6AAA027819B0222400BBBABF /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA027719B0222400BBBABF /* RecordViewController.m */; };
 		6AE2DD7319AE3267008FE7B8 /* pocket.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2DD7219AE3267008FE7B8 /* pocket.sqlite */; };
 		6AED9B4E19A5E948009DB6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4D19A5E948009DB6F2 /* Foundation.framework */; };
 		6AED9B5019A5E948009DB6F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AED9B4F19A5E948009DB6F2 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 		6A12188819AA36300035BA81 /* NewJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewJourneyViewController.m; sourceTree = "<group>"; };
 		6A1CCBD119AED8F7008E0635 /* TimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
 		6A1CCBD219AED8F7008E0635 /* TimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
+		6AAA027619B0222400BBBABF /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		6AAA027719B0222400BBBABF /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		6AE2DD7219AE3267008FE7B8 /* pocket.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocket.sqlite; sourceTree = "<group>"; };
 		6AED9B4A19A5E948009DB6F2 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED9B4D19A5E948009DB6F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				6AED9B5C19A5E948009DB6F2 /* AppDelegate.h */,
 				6AED9B5D19A5E948009DB6F2 /* AppDelegate.m */,
 				6AED9B5F19A5E948009DB6F2 /* Main_iPhone.storyboard */,
+				6AAA027619B0222400BBBABF /* RecordViewController.h */,
+				6AAA027719B0222400BBBABF /* RecordViewController.m */,
 				DF5DFD3419ADEBC000FA5E76 /* Main_iPhone-4in.storyboard */,
 				6A1CCBD119AED8F7008E0635 /* TimelineViewController.h */,
 				6A1CCBD219AED8F7008E0635 /* TimelineViewController.m */,
@@ -285,6 +290,7 @@
 				6A12188019A9B7340035BA81 /* PocketTableViewController.m in Sources */,
 				6AED9B5A19A5E948009DB6F2 /* main.m in Sources */,
 				6A12188919AA36300035BA81 /* NewJourneyViewController.m in Sources */,
+				6AAA027819B0222400BBBABF /* RecordViewController.m in Sources */,
 				6A1CCBD319AED8F7008E0635 /* TimelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

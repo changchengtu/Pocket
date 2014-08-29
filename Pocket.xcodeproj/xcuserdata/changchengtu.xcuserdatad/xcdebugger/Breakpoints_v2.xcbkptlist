@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pocket/TimelineViewController.m"
-            timestampString = "430931117.305533"
+            timestampString = "430973652.018153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pocket/TimelineViewController.m"
-            timestampString = "430932407.039432"
+            timestampString = "430973652.018153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "@implementation TimelineViewController"
             landmarkType = "3">
          </BreakpointContent>
